@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/manual/:path*", "destination": "/:path*" }
+  ]
+}
