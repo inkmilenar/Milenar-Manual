@@ -8,8 +8,8 @@
 <link rel="icon" type="image/png" href="https://milenar.vercel.app/imagens/icone-modo-claro.png" media="(prefers-color-scheme: light)">
 <link rel="icon" type="image/png" href="https://milenar.vercel.app/imagens/icone-modo-escuro.png" media="(prefers-color-scheme: dark)">
 <script>
-/* Chrome no iPhone desenha a aba sempre em fundo claro: lá o MR fica sempre preto */
-(function(){if(!/CriOS/.test(navigator.userAgent))return;var h=document.head;[].slice.call(h.querySelectorAll('link[rel="icon"]')).forEach(function(l){l.parentNode.removeChild(l)});var l=document.createElement("link");l.rel="icon";l.type="image/png";l.href="https://milenar.vercel.app/imagens/icone-modo-claro.png";h.appendChild(l)})();
+/* No celular (Chrome ou Safari), o ícone da aba é o redondo do manual: círculo preto com MR off white */
+(function(){var u=navigator.userAgent;var movel=/iPhone|iPad|iPod|Android/i.test(u)||(/Macintosh/.test(u)&&navigator.maxTouchPoints>1);if(!movel)return;var h=document.head;[].slice.call(h.querySelectorAll('link[rel="icon"]')).forEach(function(l){l.parentNode.removeChild(l)});var l=document.createElement("link");l.rel="icon";l.type="image/png";l.href="https://milenar.vercel.app/imagens/icone-redondo.png";h.appendChild(l)})();
 </script>
 <link rel="apple-touch-icon" href="https://milenar.vercel.app/imagens/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
